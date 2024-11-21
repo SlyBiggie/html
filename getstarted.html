@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <form action="/api/contact" method="post" enctype="text/plain">
+        
+        <div>
+            <label for="firstnamefield">Full Name:</label>
+            <input type="text" id="firstnamefield" name="firstname" required>
+        </div>
+
+        <div>
+            <label for="emailfield">Email:
+                <input type="email" id="emailfield" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+            <label for="phonefield">Phone:
+                <input type="tel" id="phonefield" name="phone" required>
+            </label>
+        </div>
+        
+        <div>
+            <label for="datefield">Date of birth:
+                <input type="date" id="datefield" name="date" required>
+            </label>
+        </div> 
+
+        <div>
+            <label for="genderfield">Gender:
+                <input type="radio" id="genderfield" name="gender" value="male" required>Male
+                <input type="radio" id="genderfield" name="gender" value="female" required>Female
+                <input type="radio" id="genderfield" name="gender" value="other" required>Other
+            </label>
+        </div>
+        <!-- 
+        <div>
+            <label for="messagefield">Message:
+                <textarea id="messagefield" name="message" required></textarea>
+            </label>
+        </div> -->
+
+        <div>
+            <label for="checkboxfield">Allmänna villkor:
+                <input type="checkbox" id="checkboxfield" name="allmanna_villkor" required>
+            </label>
+        </div>
+
+        <button a href="congrats.html" type="submit">Skicka</button>
+        
+    </form>
+    
+<div id="section1">
+
+</div>
+
+<!--<form action="congrats.html" method="get">-->
+    
+</body>
+</html>
